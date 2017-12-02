@@ -1,0 +1,302 @@
+{
+	"Büroausstattung ": [{
+		"title": "Schreibtisch mit Rollcontainer und Beistellschrank",
+		"descr": "sssss",
+		"price": 100000,
+		"factor": 5
+	}, {
+		"title": "Bürostuhl",
+		"descr": "sssss",
+		"price": 15000,
+		"factor": 1
+	}, {
+		"title": "Schreibtischlampe Standlampe Tageslicht ",
+		"descr": "sssss",
+		"price": 10000,
+		"factor": 1
+	}, {
+		"title": "Deckenlampe Tageslicht",
+		"descr": "sssss",
+		"price": 30000,
+		"factor": 1
+	}, {
+		"title": "abschließbarer, feuerfester Aktenschrank (Metall)",
+		"descr": "sssss",
+		"price": 40000,
+		"factor": 5
+	}, {
+		"title": "Kleinanschaffungen (Papierkorb, Schredderer, Locher, Hefter, Aktenordner, Ablagekörbe, Stempel…)",
+		"descr": "sssss",
+		"price": 25000,
+		"factor": 1
+	}],
+
+	"IT-Anschaffungen": [{
+		"title": "Notebook/PC incl. vorinstalliertem Betriebssystem und Abrechnungssoftware",
+		"descr": "sssss",
+		"price": 330000,
+		"factor": 5
+	}, {
+		"title": "Speichermedien, zwei externe FP mit 500 GB Speicher",
+		"descr": "",
+		"price": 15000,
+		"factor": 1
+	}, {
+		"title": "Drucker Multifunktionsgerät (Drucken, Kopieren, Scannen, Fax)",
+		"descr": "sssss",
+		"price": 25000,
+		"factor": 1
+	}, {
+		"title": "Festnetztelefon mit AB",
+		"descr": "sssss",
+		"price": 12000,
+		"factor": 1
+	}, {
+		"title": "Smartphone",
+		"descr": "sssss",
+		"price": 130000,
+		"factor": 5
+	}, {
+		"title": "Kartenlesegerät (Abschreibung wie bei EC-Kartenleser)",
+		"descr": "",
+		"price": 34000,
+		"factor": 5
+	}, {
+		"title": "Navi",
+		"descr": "sssss",
+		"price": 3400,
+		"factor": 1
+	}],
+	"KFZ-Anschaffung": [{
+		"title": "Auto",
+		"descr": "sssss",
+		"price": 3400,
+		"factor": 6
+	}],
+	"Hebammenbedarf": [{
+		"title": "Doptone",
+		"descr": "sssss",
+		"price": 75000,
+		"factor": 5
+	}, {
+		"title": "RR-Gerät",
+		"descr": "sssss",
+		"price": 12000,
+		"factor": 1
+	}, {
+		"title": "Stethoskope Erwachsener und Säugling, Preis für 2",
+		"descr": "sssss",
+		"price": 30000,
+		"factor": 1
+	}, {
+		"title": "Babywaage",
+		"descr": "sssss",
+		"price": 3400,
+		"factor": 1
+	}, {
+		"title": "Hebammentasche",
+		"descr": "",
+		"price": 35000,
+		"factor": 2
+	}, {
+		"title": "sonstiges (Pinardrohr, Fieberthermometer, Maßband, Stauschlauch, Diagnostikleuchte, …)",
+		"descr": "sssss",
+		"price": 12000,
+		"factor": 1
+	}, {
+		"title": "Pulsoximeter für Neugeborene",
+		"descr": "",
+		"price": 70000,
+		"factor": 5
+	}, {
+		"title": "Sonde zur Pulsoximetriemessung beim Neugeborenen am Fuss",
+		"descr": "",
+		"price": 10000,
+		"factor": 1
+	}],
+	"Praxisausstattung": {
+		"Kurse": [{
+			"title": "Lehrmaterialien",
+			"descr": "weibl. Becken,Geburtsatlas,Neugeborenenpuppe;Stickuterus, PlacentaModell,Gebärhocher, ect.",
+			"price": 200000,
+			"factor": 1
+		}, {
+			"title": "Matten, 12 Stück",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Mattenwandhalter 3 Stück",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Gymnastikbälle, 15 Stück",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Ballaufbewahrungen 2 Stück",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Meditationskissen 15 Stück inkl. Bezügen",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Meditationskissen 15 Stück inkl. Bezügen",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Stillkissen, 15 Stück mit PU-Inlett und gummiertem Bezug",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "diverses (Ballschalen, Igelbälle, Ballpumpe, Therabänder…)",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "Standleuchte",
+			"descr": "",
+			"price": 0,
+			"factor": 1
+		}, {
+			"title": "CD-Player",
+			"descr": "",
+			"price": 15000,
+			"factor": 1
+		}, {
+			"title": "Beamer",
+			"descr": "",
+			"price": 40000,
+			"factor": 5
+		}],
+		"Aufenthaltsraum": [{
+			"title": "Sofa/Sitzbank/Stühle",
+			"descr": "je nach Platz und Vorliebe",
+			"price": 70000,
+			"factor": 5
+		}, {
+			"title": "STand- oder Deckenleuchte",
+			"descr": "",
+			"price": 20000,
+			"factor": 1
+		}],
+		"Beratungsraum": [{
+			"title": "2 Sessel/Sofa",
+			"descr": "je nach Platz und bevorzugtem Moblilar, wenn über 400 Euro 5 Jahre Abschreibung",
+			"price": 70000,
+			"factor": 5
+		}, {
+			"title": "Beistelltische oder kleiner Schreibtisch",
+			"descr": "",
+			"price": 10000,
+			"factor": 1
+		}, {
+			"title": "Komode/ Schrank für Material",
+			"descr": "",
+			"price": 35000,
+			"factor": 1
+		}, {
+			"title": "Untersuchungsliege",
+			"descr": "750",
+			"price": 0,
+			"factor": 5
+		}, {
+			"title": "Schreibtischlampe Standlampe",
+			"descr": "",
+			"price": 5000,
+			"factor": 1
+		}, {
+			"title": "Deckenlampe",
+			"descr": "",
+			"price": 5000,
+			"factor": 1
+		}],
+		"Medizinbedarf": [{
+			"title": "CTG-Gerät",
+			"descr": "wird nur für Schwangerenvorsorgen und ggf Geburtshilfe gebraucht",
+			"price": 500000,
+			"factor": 5
+		}, {
+			"title": "Personenwaage",
+			"descr": "für Schwngerenvorsorge",
+			"price": 35000,
+			"factor": 1
+		}],
+		"Sonstiges": [{
+				"title": "Wickelkommode und Wickelauflage",
+				"descr": "",
+				"price": 30000,
+				"factor": 1
+			}, {
+				"title": "Handtuchspender",
+				"descr": "",
+				"price": 5000,
+				"factor": 1
+			},
+			{
+				"title": "Desinfektionsmittel- und Seifenspender",
+				"descr": "",
+				"price": 30000,
+				"factor": 1
+			},
+			{
+				"title": "Garderobe",
+				"descr": "",
+				"price": 2500,
+				"factor": 5
+			},
+			{
+				"title": "2 Schuhregale",
+				"descr": "",
+				"price": 15000,
+				"factor": 1
+			},
+			{
+				"title": "Spiegel",
+				"descr": "",
+				"price": 5000,
+				"factor": 1
+			},
+			{
+				"title": "Kleinbedarf (Handtuchhalter, Geschirr, Wasserkocher…)",
+				"descr": "",
+				"price": 45000,
+				"factor": 1
+			},
+			{
+				"title": "Vorhänge für Fenster",
+				"descr": "",
+				"price": 30000,
+				"factor": 1
+			}
+		],
+		"Geburtshilfliche Ausstattung": [{
+			"title": "Hebammentasche",
+			"descr": "",
+			"price": 85000,
+			"factor": 5
+		}, {
+			"title": "Beatmungsbeutel und -maske für Neug. (2 Beutel, 3 Masken)",
+			"descr": "",
+			"price": 40000,
+			"factor": 1
+		}, {
+			"title": "Gebärhocker",
+			"descr": "",
+			"price": 60000,
+			"factor": 5
+		}, {
+			"title": "sonstiges (Irrigator mit Schlauch und Zubehör, Zubehör O2-Flasche...)",
+			"descr": "",
+			"price": 45000,
+			"factor": 1
+		}]
+	}
+}
