@@ -124,47 +124,42 @@
 		}, {
 			"title": "Matten, 12 Stück",
 			"descr": "",
-			"price": 0,
-			"factor": 1
+			"price": 200000,
+			"factor": 5
 		}, {
 			"title": "Mattenwandhalter 3 Stück",
 			"descr": "",
-			"price": 0,
-			"factor": 1
+			"price": 30000,
+			"factor": 5
 		}, {
 			"title": "Gymnastikbälle, 15 Stück",
 			"descr": "",
-			"price": 0,
-			"factor": 1
+			"price": 30000,
+			"factor": 5
 		}, {
 			"title": "Ballaufbewahrungen 2 Stück",
 			"descr": "",
-			"price": 0,
-			"factor": 1
+			"price": 37000,
+			"factor": 5
 		}, {
 			"title": "Meditationskissen 15 Stück inkl. Bezügen",
 			"descr": "",
-			"price": 0,
-			"factor": 1
-		}, {
-			"title": "Meditationskissen 15 Stück inkl. Bezügen",
-			"descr": "",
-			"price": 0,
+			"price": 70000,
 			"factor": 1
 		}, {
 			"title": "Stillkissen, 15 Stück mit PU-Inlett und gummiertem Bezug",
 			"descr": "",
-			"price": 0,
+			"price": 160000,
 			"factor": 1
 		}, {
 			"title": "diverses (Ballschalen, Igelbälle, Ballpumpe, Therabänder…)",
 			"descr": "",
-			"price": 0,
+			"price": 50000,
 			"factor": 1
 		}, {
 			"title": "Standleuchte",
 			"descr": "",
-			"price": 0,
+			"price": 100000,
 			"factor": 1
 		}, {
 			"title": "CD-Player",
@@ -183,7 +178,7 @@
 			"price": 70000,
 			"factor": 5
 		}, {
-			"title": "STand- oder Deckenleuchte",
+			"title": "Stand- oder Deckenleuchte",
 			"descr": "",
 			"price": 20000,
 			"factor": 1
@@ -205,8 +200,8 @@
 			"factor": 1
 		}, {
 			"title": "Untersuchungsliege",
-			"descr": "750",
-			"price": 0,
+			"descr": "",
+			"price": 75000,
 			"factor": 5
 		}, {
 			"title": "Schreibtischlampe Standlampe",
@@ -221,7 +216,7 @@
 		}],
 		"Medizinbedarf": [{
 			"title": "CTG-Gerät",
-			"descr": "Wird nur für Schwangerenvorsorgen und ggf Geburtshilfe gebraucht",
+			"descr": "Wird nur für Schwangerenvorsorgen und ggf Geburtshilfe gebraucht, kann auch gebraucht gekauft werden",
 			"price": 500000,
 			"factor": 5
 		}, {
