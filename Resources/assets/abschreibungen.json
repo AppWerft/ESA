@@ -84,7 +84,8 @@
 		"price": 12000,
 		"factor": 1
 	}, {
-		"title": "Stethoskope Erwachsener und Säugling, Preis für 2",
+		"title": "Stethoskope Erwachsener und Säugling",
+		"count": 2,
 		"descr": "sssss",
 		"price": 30000,
 		"factor": 1
@@ -117,7 +118,7 @@
 	"Praxisausstattung": {
 		"Kurse": [{
 			"title": "Lehrmaterialien",
-			"descr": "weibl. Becken,Geburtsatlas,Neugeborenenpuppe;Stickuterus, PlacentaModell,Gebärhocher, ect.",
+			"descr": "weibl. Becken, Geburtsatlas, Neugeborenenpuppe; Stickuterus, PlacentaModell, Gebärhocker, ect.",
 			"price": 200000,
 			"factor": 1
 		}, {
@@ -220,12 +221,12 @@
 		}],
 		"Medizinbedarf": [{
 			"title": "CTG-Gerät",
-			"descr": "wird nur für Schwangerenvorsorgen und ggf Geburtshilfe gebraucht",
+			"descr": "Wird nur für Schwangerenvorsorgen und ggf Geburtshilfe gebraucht",
 			"price": 500000,
 			"factor": 5
 		}, {
 			"title": "Personenwaage",
-			"descr": "für Schwngerenvorsorge",
+			"descr": "für Schwangerenvorsorge",
 			"price": 35000,
 			"factor": 1
 		}],
@@ -253,7 +254,8 @@
 				"factor": 5
 			},
 			{
-				"title": "2 Schuhregale",
+				"title": "Schuhregale",
+				"count" : 2,
 				"descr": "",
 				"price": 15000,
 				"factor": 1
@@ -293,7 +295,7 @@
 			"price": 60000,
 			"factor": 5
 		}, {
-			"title": "sonstiges (Irrigator mit Schlauch und Zubehör, Zubehör O2-Flasche...)",
+			"title": "sonstiges (Irrigator mit Schlauch und Zubehör, Zubehör O2-Flasche …)",
 			"descr": "",
 			"price": 45000,
 			"factor": 1
