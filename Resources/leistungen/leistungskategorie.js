@@ -9,7 +9,7 @@ module.exports = function(k) {
 	$.add(Ti.UI.createView({
 		width : Ti.UI.FILL,
 		height : Ti.UI.FILL,
-		bubbleParent:true
+		bubbleParent : true
 	}));
 	$.arrow = Ti.UI.createLabel({
 		right : 10,
@@ -60,13 +60,15 @@ module.exports = function(k) {
 	$.stepper = require('leistungen/stepper')(1);
 	$.stepper.borderWidth = 1;
 	function showStepper() {
-		$.stepper.setHeight(50);
 		$.stepper.setTop(50);
 		$.setHeight(100);
+		$.stepper.animate({
+			height : 50
+		});
 	}
 
 	function hideStepper() {
-		$.stepper.setHeight(0);
+		$.stepper.height = 0;
 		$.stepper.setTop(0);
 		$.setHeight(50);
 	}

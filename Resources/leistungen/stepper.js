@@ -1,7 +1,8 @@
 module.exports = function(count) {
 	var $ = Ti.UI.createView({
-		width : 120,
-		height : 50,
+		width : 125,
+		height : 40
+		
 	});
 	var countView = Ti.UI.createLabel({
 		font : {
@@ -16,8 +17,8 @@ module.exports = function(count) {
 		borderRadius : 20,
 		borderWidth : 1,
 		opacity : .3,
-		backgroundColor : 'purple',
-		left : 0
+		backgroundColor : '#800080',
+		left : 1
 	});
 	minus.add(Ti.UI.createLabel({
 		text : '－',
@@ -32,8 +33,8 @@ module.exports = function(count) {
 		height : 40,
 		borderRadius : 20,
 		borderWidth : 1,
-		backgroundColor : 'purple',
-		right : 0
+		backgroundColor : '#800080',
+		right : 1
 	});
 	plus.add(Ti.UI.createLabel({
 		text : '＋',

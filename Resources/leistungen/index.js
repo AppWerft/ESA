@@ -5,12 +5,10 @@ module.exports = function() {
 		data : leistungen.map(require('leistungen/leistungskategorie'))
 	});
 	table.addEventListener('click', function(e) {
-		//alert(JSON.stringify(e.source.apiName));
-		//if (!e.row.active)
-		//	return;
-		var subwin = require('leistungen/details')(JSON.parse(e.rowData.itemId));
-		subwin.open();
-
+		if (e.row.leistungaktiviert) {
+			var subwin = require('leistungen/details')(JSON.parse(e.rowData.itemId));
+			subwin.open();
+		}
 	});
 	var win = Ti.UI.createWindow({
 		layout : 'vertical'

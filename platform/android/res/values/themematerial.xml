@@ -11,7 +11,7 @@
         <item name="actionModeBackground">@drawable/cab_background_top_esa</item>
         <item name="actionModeSplitBackground">@drawable/cab_background_bottom_esa</item>
         <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Esa</item>
-
+		
                 <!-- Light.DarkActionBar specific -->
         <item name="actionBarWidgetTheme">@style/Theme.Esa.Widget</item>
     	<item name="colorPrimary">#800080</item>
@@ -23,8 +23,11 @@
     	<item name="colorSwitchThumbNormal">#BDBDBD</item>
 	    <item name="android:colorButtonNormal">#BDBDBD</item>
     	<item name="android:colorEdgeEffect">#800080</item>
-    	<item name="android:navigationBarColor">#800080</item>
-    	<item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    	<item name="android:windowTranslucentNavigation">false</item>
+    	<item name="android:navigationBarColor">@android:color/transparent</item>
+    	<item name="android:statusBarColor">#800080</item>
+    	
+	
 	</style>
 	<style name="ActionBar.Solid.Esa" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <item name="background">@drawable/ab_solid_esa</item>

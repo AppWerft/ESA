@@ -50,8 +50,7 @@ module.exports = function(data) {
 	}));
 	$.addEventListener("open", function() {
 		if (Ti.Platform.osname === "android") {
-			abx.backgroundColor = 'purple';
-			abx.statusbarColor = 'purple';
+			
 			abx.titleColor = 'white';
 			abx.title = data.title;
 			abx.subtitle = "Details";

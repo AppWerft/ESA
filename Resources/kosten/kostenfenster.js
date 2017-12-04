@@ -1,7 +1,5 @@
 module.exports = function(data) {
-	var $ = Ti.UI.createWindow({
-		
-	});
+	var $ = Ti.UI.createWindow();
 	$.table = Ti.UI.createTableView({});
 	$.add($.table);
 	$.addEventListener("open", function() {

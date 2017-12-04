@@ -1,3 +1,5 @@
+"/Users/fuerst/Documents/MLearning/ESA/build/android/gen/android/support/compat/R.java"
+"/Users/fuerst/Documents/MLearning/ESA/build/android/gen/android/support/design/R.java"
 "/Users/fuerst/Documents/MLearning/ESA/build/android/gen/android/support/v7/appcompat/R.java"
 "/Users/fuerst/Documents/MLearning/ESA/build/android/gen/android/support/v7/cardview/R.java"
 "/Users/fuerst/Documents/MLearning/ESA/build/android/gen/com/alcoapps/actionbarextras/R.java"
