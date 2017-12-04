@@ -37,52 +37,17 @@ module.exports = function() {
 					return require('/kosten/kategorierow')(subcat, i);
 				}));
 				subtable.addEventListener('click', function(e) {
-					var subcat = e.source.cat;
-					var kostenwin = Ti.UI.createWindow({
-						title : subcat
+					var kostenwin = require('/kosten/kostenfenster')({
+						title : e.source.cat
 					});
-					var subtable = Ti.UI.createTableView({});
-					kostenwin.add(subtable);
-					var list = kosten[cat][subcat];
-					subtable.setData(list.map(function(k) {
+					kostenwin.table.setData(kosten[cat][e.source.cat].map(function(k) {
 						return require('kosten/kostenzeile')(k);
 					}));
-
 					kostenwin.open();
-					kostenwin.addEventListener("open", function() {
-						if (Ti.Platform.osname === "android") {
-							abx.backgroundColor = '#800080';
-							abx.statusbarColor = '#800080';
-							abx.titleColor = 'white';
-							abx.title = subcat;
-							abx.displayShowHomeEnabled = true;
-							abx.subtitle = "Kostenkalkulation";
-							abx.displayShowHomeEnabled = true;
-							kostenwin.getActivity().actionBar.setDisplayHomeAsUp(true);
-							kostenwin.getActivity().actionBar.onHomeIconItemSelected = function() {
-								kostenwin.close();
-							};
-						}
-					});
 				});
 
 			}
 			subwin.add(subtable);
-			subwin.addEventListener("open", function() {
-				if (Ti.Platform.osname === "android") {
-					abx.backgroundColor = '#800080';
-					abx.statusbarColor = '#800080';
-					abx.titleColor = 'white';
-					abx.title = cat;
-					abx.displayShowHomeEnabled = true;
-					abx.subtitle = "Kostenkalkulation";
-					abx.displayShowHomeEnabled = true;
-					subwin.getActivity().actionBar.setDisplayHomeAsUp(true);
-					subwin.getActivity().actionBar.onHomeIconItemSelected = function() {
-						subwin.close();
-					};
-				}
-			});
 			subwin.open();
 		}
 	}

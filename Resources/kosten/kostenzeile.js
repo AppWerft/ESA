@@ -11,7 +11,9 @@ module.exports = function(k) {
 	$.add(Ti.UI.createLabel({
 		text : k.title,
 		textAlign : 'left',
-		left : 20,
+		left : 22,
+		right:20,
+		font: {fontSize:16},
 		top : 10,
 
 		color : '#444'
