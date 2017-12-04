@@ -1,0 +1,1 @@
+/Users/fuerst/Documents/MLearning/ESA/Resources/leistungen/details.js

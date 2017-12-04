@@ -1,35 +1,32 @@
-/**
- * Create a new `Ti.UI.TabGroup`.
- */
-var tabGroup = Ti.UI.createTabGroup();
+var abx = require('com.alcoapps.actionbarextras');
+Ti.UI.backgroundColor = '#800080';
 
-/**
- * Add the two created tabs to the tabGroup object.
- */
-tabGroup.addTab(createTab("Leistungen", require('leistungen')(), "assets/images/tab1.png"));
-tabGroup.addTab(createTab("Kosten", require('kosten')(), "assets/images/tab2.png"));
+var tabGroup = Ti.UI.createTabGroup({
+	exitOnClose : true
+	
+});
 
-/**
- * Open the tabGroup
- */
+tabGroup.addTab(createTab("Leistungen", require('leistungen/index')(), "assets/images/tab1.png"));
+tabGroup.addTab(createTab("Betriebsausgaben", require('kosten/index')(), "assets/images/tab2.png"));
+
+tabGroup.addEventListener("open", function() {
+	if (Ti.Platform.osname === "android") {
+		abx.backgroundColor = 'purple';
+		abx.statusbarColor = 'purple';
+		abx.titleColor = 'white';
+		abx.subtitleColor = '#ddd';
+		abx.subtitle = "Ihr Kalkulator für den Erfolg als Hebamme";
+		abx.navigationbarColor = "purpur";
+	}
+});
+
 tabGroup.open();
-
-/**
- * Creates a new Tab and configures it.
- *
- * @param  {String} title The title used in the `Ti.UI.Tab` and it's included `Ti.UI.Window`
- * @param  {String} message The title displayed in the `Ti.UI.Label`
- * @return {String} icon The icon used in the `Ti.UI.Tab`
- */
-function createTab(title, win,icon) {
-   
-
-    var tab = Ti.UI.createTab({
-        title: title,
-        icon: icon,
-        window: win
-    });
-
-    return tab;
+function createTab(title, win, icon) {
+	var tab = Ti.UI.createTab({
+		title : title,
+		window : win,
+		backgroundColor : 'violett'
+	});
+	return tab;
 }
 

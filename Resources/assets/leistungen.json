@@ -3,7 +3,7 @@
     "title": "Leistungen in der Schwangerschaft",
     "leistungen": [
       {
-        "title": "Beratung der Schwangeren, auch mittels Kommunkationsmeduim",
+        "title": "Beratung der Schwangeren, auch mittels Kommunkationsmedium",
         "service": {
           "fixedprice": true,
           "price": 800,
@@ -101,7 +101,7 @@
     ]
   },
   {
-    "title": "Kurse",
+    "title": "Schwangeren-Kurse",
     "leistungen": [
       {
         "title": "Geburtsvorbereitungskurs",
