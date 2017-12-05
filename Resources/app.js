@@ -6,7 +6,7 @@ var tabGroup = Ti.UI.createTabGroup({
 });
 
 tabGroup.addTab(createTab("Leistungen", require('leistungen/index')(), "assets/images/tab1.png"));
-tabGroup.addTab(createTab("Investitionen", require('kosten/index')(), "assets/images/tab2.png"));
+tabGroup.addTab(createTab("Investitionen", require('investitionen/index')(), "assets/images/tab2.png"));
 
 tabGroup.addEventListener("open", function() {
 	if (Ti.Platform.osname === "android") {
@@ -21,6 +21,7 @@ tabGroup.addEventListener("open", function() {
 });
 
 tabGroup.open();
+require('versionsreminder')();
 function createTab(title, win, icon) {
 	var tab = Ti.UI.createTab({
 		title : title,

@@ -1,6 +1,8 @@
 module.exports = function(data) {
-	var $ = Ti.UI.createWindow();
-	$.table = Ti.UI.createTableView({});
+	var $ = Ti.UI.createWindow({
+		backgroundColor : '#800080'
+	});
+	$.table = Ti.UI.createTableView({backgroundColor : 'white'});
 	$.add($.table);
 	$.addEventListener("open", function() {
 		if (Ti.Platform.osname === "android") {

@@ -2,6 +2,7 @@ module.exports = function() {
 	var leistungen = JSON.parse(Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, '/assets/leistungen.json').read().getText());
 	var table = Ti.UI.createTableView({
 		top : 25,
+		backgroundColor : 'white',
 		data : leistungen.map(require('leistungen/leistungskategorie'))
 	});
 	table.addEventListener('click', function(e) {
@@ -11,7 +12,8 @@ module.exports = function() {
 		}
 	});
 	var win = Ti.UI.createWindow({
-		layout : 'vertical'
+		layout : 'vertical',
+		
 	});
 
 	win.add(Ti.UI.createLabel({

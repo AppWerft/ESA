@@ -1,4 +1,4 @@
-var kosten = JSON.parse(Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'assets/abschreibungen.json').read().getText());
+var kosten = JSON.parse(Ti.Filesystem.getFile(Ti.Filesystem.resourcesDirectory, 'assets/investitionen.json').read().getText());
 
 module.exports = function() {
 	var $ = Ti.UI.createWindow({
@@ -17,6 +17,7 @@ module.exports = function() {
 	$.add(description);
 	$.tableView = Ti.UI.createTableView({
 		top : 20,
+		backgroundColor : 'white'
 
 	});
 
@@ -24,31 +25,34 @@ module.exports = function() {
 
 	function onClick(e) { {
 			var cat = e.source.cat;
-			var subwin = Ti.UI.createWindow({
-				title : cat
-			});
-			var subtable = Ti.UI.createTableView({});
+
 			if (Array.isArray(kosten[cat])) {
-				subtable.setData(kosten[cat].map(function(k) {
-					return require('kosten/kostenzeile')(k);
+				var kostenwin = require('/investitionen/kostenfenster')({
+					title : cat
+				});
+				kostenwin.table.setData(kosten[cat].map(function(k) {
+					return require('investitionen/kostenzeile')(k);
 				}));
+				kostenwin.open();
 			} else {// Unterkategorie:
-				subtable.setData(Object.keys(kosten[cat]).map(function(subcat, i) {
-					return require('/kosten/kategorierow')(subcat, i);
+				var subwin = require('/investitionen/kostenfenster')({
+					title : cat
+				});
+				subwin.table.setData(Object.keys(kosten[cat]).map(function(subcat, i) {
+					return require('/investitionen/kategorierow')(subcat, i);
 				}));
-				subtable.addEventListener('click', function(e) {
-					var kostenwin = require('/kosten/kostenfenster')({
+				subwin.table.addEventListener('click', function(e) {
+					var kostenwin = require('/investitionen/kostenfenster')({
 						title : e.source.cat
 					});
 					kostenwin.table.setData(kosten[cat][e.source.cat].map(function(k) {
-						return require('kosten/kostenzeile')(k);
+						return require('investitionen/kostenzeile')(k);
 					}));
 					kostenwin.open();
 				});
+				subwin.open();
 
 			}
-			subwin.add(subtable);
-			subwin.open();
 		}
 	}
 
@@ -57,7 +61,7 @@ module.exports = function() {
 	$.addEventListener('close', function() {
 		$.tableView.removeEventListener('click', onClick);
 	});
-	$.tableView.setData(Object.getOwnPropertyNames(kosten).map(require('kosten/kategorierow')));
+	$.tableView.setData(Object.getOwnPropertyNames(kosten).map(require('investitionen/kategorierow')));
 
 	return $;
 
